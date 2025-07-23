@@ -1,0 +1,42 @@
+Arquitetura do React
+
+Component - Render Html - State 
+    /
+ child component     
+
+single module
+my-component.js
+
+
+Termo Chaves
+
+Component - Main player in a React application. Has two parts: 
+1. View dor user interface
+2. JavaScript that contatins application logic / event handling for the view 
+
+Props 
+How we pass data from a parent component to a child component - Its all about passing data whitin the high hierachy 
+
+State 
+
+Cotains data about the component.
+When the State changes, the componen will re-render / the DOM is always reredering itself besed on the state of a specific component 
+
+Hooks 
+A way to use local state and other React feature withou wtriting a new class
+
+Module
+A collection of related component, that creates a specific view
+
+
+Application UI Composition 
+
+<Header Component>       |
+Main content Component   |                   Rest API   
+    Todo list Component  | - component.js <--------------> Spring Boot <---> database
+<footer Component>       |                                   Back-End
+
+We have the all the components that communicates over Rest APi, wich is Http over to a spring boot back end into database.
+in our database will then have data tha we can return back to our spring boot, which is going to go back over Http to our client into our application
+
+
